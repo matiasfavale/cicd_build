@@ -1,0 +1,2 @@
+sap.ui.require(["sap/fe/test/JourneyRunner","buidci/redemptions/test/integration/FirstJourney","buidci/redemptions/test/integration/pages/PurchasesList","buidci/redemptions/test/integration/pages/PurchasesObjectPage"],function(e,i,t,s){"use strict";var e=new e({launchUrl:sap.ui.require.toUrl("buidci/redemptions")+"/index.html"});e.run({pages:{onThePurchasesList:t,onThePurchasesObjectPage:s}},i.run)});
+//# sourceMappingURL=opaTests.qunit.js.map

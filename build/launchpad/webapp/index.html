@@ -2,10 +2,10 @@
 <html>
 
 <head>
-    <title> Project Preview </title>
-    <script src="https://ui5.sap.com/1.120.17/resources/sap-ui-core.js" 
+    <title> Application Overview </title>
+    <script src="https://ui5.sap.com/1.128.1/resources/sap-ui-core.js" 
             id="sap-ui-bootstrap"
-            data-sap-ui-theme="sap_horizon"
+            data-sap-ui-theme="sap_belize"
             data-sap-ui-bindingSyntax="complex" 
             data-sap-ui-xx-bindingSyntax="complex"
             data-sap-ui-resourceroots='{"assets": "assets"}' 
@@ -27,7 +27,7 @@
                     return Controller.extend("PreviewController", {
                         onInit: function () {
 
-                            const data = {"Services":[{"ServiceName":"buidciSrv","DetailsURL":"./service/buidci/","Metadata":"./service/buidci/$metadata","Entities":[{"Name":"Customers","URL":"./service/buidci/Customers","FioriURL":"$fiori-preview/buidciSrv/Customers#preview-app"},{"Name":"Purchases","URL":"./service/buidci/Purchases","FioriURL":"$fiori-preview/buidciSrv/Purchases#preview-app"},{"Name":"Redemptions","URL":"./service/buidci/Redemptions","FioriURL":"$fiori-preview/buidciSrv/Redemptions#preview-app"}],"EntitiesCount":3}]}
+                            const data = {"Services":[{"ServiceName":"buidciSrv","DetailsURL":"./service/buidci/","Metadata":"./service/buidci/$metadata","Entities":[{"Name":"Customers","URL":"./service/buidci/Customers","FioriURL":""},{"Name":"Purchases","URL":"./service/buidci/Purchases","FioriURL":""},{"Name":"Redemptions","URL":"./service/buidci/Redemptions","FioriURL":""}],"EntitiesCount":3}]}
                             this.getView().setModel(new JSONModel(data));
                         }
                     });

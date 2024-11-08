@@ -1,0 +1,32 @@
+_schema-version: '3.1'
+id: buildci
+version: 1.0.0
+description: Example of a Multi-Target Application (MTA) using Node.js and HTML5
+
+modules:
+  - name: buildci
+    type: javascript
+    path: backend
+    parameters:
+      memory: 512M
+      disk-quota: 1G
+    provides:
+      - name: api-backend
+        properties:
+          url: '/api'
+    requires:
+      - name: hana-db
+
+  - name: html5-frontend
+    type: html5
+    path: frontend
+    parameters:
+      memory: 256M
+    requires:
+      - name: api-backend
+
+resources:
+  - name: hana-db
+    type: com.sap.xs.hana.db
+    parameters:
+      service-name: service.js

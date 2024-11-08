@@ -1,5 +1,5 @@
 _schema-version: '3.1'
-id: buildci
+ID: buildci
 version: 1.0.0
 description: Example of a Multi-Target Application (MTA) using Node.js and HTML5
 

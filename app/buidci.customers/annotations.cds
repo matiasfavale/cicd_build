@@ -1,0 +1,1 @@
+using buidciSrv as service from '../../srv/service';
